@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WoW BiS List - Dragonflight</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Wowhead Power -->
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔥 WoW BiS List (Amirdrassil)</h1>
+      <p>Актуально на патч 10.2.7 | <a href="https://www.wowhead.com/best-in-slot" target="_blank">Данные с Wowhead</a></p>
+    </header>
+
+    <div class="controls">
+      <select id="classSelect" onchange="filterSpecs()">
+        <option value="">Выберите класс</option>
+      </select>
+      <select id="specSelect" onchange="showBis()">
+        <option value="">Выберите спек</option>
+      </select>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

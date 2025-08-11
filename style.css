@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e0e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #f0b828;
+  margin: 0;
+}
+
+header p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  flex: 1;
+  min-width: 200px;
+}
+
+#result {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.bis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.bis-table th {
+  text-align: left;
+  padding: 12px 10px;
+  background: #2c2c2c;
+  color: #f0b828;
+  border-bottom: 2px solid #444;
+}
+
+.bis-table td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.bis-table tr:hover {
+  background: #252525;
+}
+
+.slot {
+  font-weight: bold;
+  color: #aaa;
+  width: 120px;
+}
+
+.item-link {
+  color: #69ccf0;
+  text-decoration: none;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  .bis-table th, .bis-table td {
+    padding: 8px 6px;
+    font-size: 0.9em;
+  }
+}

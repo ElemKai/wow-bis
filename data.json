@@ -1,0 +1,47 @@
+[
+  {
+    "class": "Mage",
+    "spec": "Fire",
+    "slot": "Helm",
+    "name": "Crown of the Shattered Flame",
+    "id": 209855,
+    "ilvl": 457,
+    "source": "Amirdrassil - Gnarlroot (Mythic)"
+  },
+  {
+    "class": "Mage",
+    "spec": "Fire",
+    "slot": "Cloak",
+    "name": "Drape of the Infernal Core",
+    "id": 208734,
+    "ilvl": 447,
+    "source": "Leatherworking"
+  },
+  {
+    "class": "Mage",
+    "spec": "Fire",
+    "slot": "Trinket 1",
+    "name": "Ignition Mage's Fuse",
+    "id": 209812,
+    "ilvl": 457,
+    "source": "Amirdrassil - Tindral Sageswift"
+  },
+  {
+    "class": "Mage",
+    "spec": "Fire",
+    "slot": "Trinket 2",
+    "name": "Mirror of Fractured Tomes",
+    "id": 209801,
+    "ilvl": 457,
+    "source": "Amirdrassil - Larodar"
+  },
+  {
+    "class": "Mage",
+    "spec": "Frost",
+    "slot": "Helm",
+    "name": "Frostfire Diadem",
+    "id": 209854,
+    "ilvl": 457,
+    "source": "Amirdrassil - Iridikron"
+  }
+]
