@@ -1,47 +1,47 @@
 [
   {
-    "class": "Mage",
-    "spec": "Fire",
+    "class": "Warrior",
+    "spec": "Arms",
     "slot": "Helm",
-    "name": "Crown of the Shattered Flame",
-    "id": 209855,
-    "ilvl": 457,
-    "source": "Amirdrassil - Gnarlroot (Mythic)"
+    "name": "Helm of the Iron Juggernaut",
+    "id": 225101,
+    "ilvl": 480,
+    "source": "The War Within - Darkfathom Deeps: Broodqueen"
   },
   {
-    "class": "Mage",
-    "spec": "Fire",
-    "slot": "Cloak",
-    "name": "Drape of the Infernal Core",
-    "id": 208734,
-    "ilvl": 447,
-    "source": "Leatherworking"
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Chest",
+    "name": "Chestplate of the Berserker King",
+    "id": 225108,
+    "ilvl": 480,
+    "source": "The War Within - Gorgoa: Mutanus the Devourer"
   },
   {
     "class": "Mage",
     "spec": "Fire",
     "slot": "Trinket 1",
     "name": "Ignition Mage's Fuse",
-    "id": 209812,
-    "ilvl": 457,
-    "source": "Amirdrassil - Tindral Sageswift"
+    "id": 224950,
+    "ilvl": 480,
+    "source": "The War Within - Manaforge Omega: High Energy Construct"
   },
   {
-    "class": "Mage",
-    "spec": "Fire",
-    "slot": "Trinket 2",
-    "name": "Mirror of Fractured Tomes",
-    "id": 209801,
-    "ilvl": 457,
-    "source": "Amirdrassil - Larodar"
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Main Hand",
+    "name": "Primal Fire Core",
+    "id": 225005,
+    "ilvl": 480,
+    "source": "The War Within - Manaforge Omega: High Energy Construct"
   },
   {
-    "class": "Mage",
-    "spec": "Frost",
-    "slot": "Helm",
-    "name": "Frostfire Diadem",
-    "id": 209854,
-    "ilvl": 457,
-    "source": "Amirdrassil - Iridikron"
+    "class": "Shaman",
+    "spec": "Elemental",
+    "slot": "Trinket 1",
+    "name": "Spark of the Infinite",
+    "id": 224951,
+    "ilvl": 480,
+    "source": "The War Within - Manaforge Omega: High Energy Construct"
   }
 ]
