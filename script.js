@@ -29,7 +29,6 @@ async function loadData() {
     // Заполняем классы
     const classSelect = document.getElementById('classSelect');
     const uniqueClasses = [...new Set(data.map(item => item.class))].sort();
-    
     uniqueClasses.forEach(cls => {
       const option = document.createElement('option');
       option.value = cls;
@@ -53,11 +52,7 @@ async function loadData() {
     document.getElementById('result').innerHTML = `
       <p class="no-data">
         <strong>Ошибка загрузки данных:</strong><br>
-        ${err.message}<br><br>
-        Проверь:<br>
-        • Существует ли <code>data.json</code><br>
-        • Валидный ли JSON (нет запятых после последнего элемента)<br>
-        • Запущен ли через сервер (не file://)
+        ${err.message}
       </p>
     `;
   }
@@ -79,18 +74,13 @@ function filterSpecs() {
 
   specSelect.innerHTML = '<option value="">Выберите спек</option>';
 
-  if (!selectedClass) return;
+  if (!selectedClass) return; // ✅ OK — внутри функции
 
-  // Нормализуем сравнение (на всякий случай)
   const specs = [...new Set(
     bisData
       .filter(item => item.class === selectedClass)
       .map(item => item.spec)
   )].sort();
-
-  if (specs.length === 0) {
-    console.warn(`⚠️ Для класса "${selectedClass}" не найдено ни одной специализации`);
-  }
 
   specs.forEach(spec => {
     const option = document.createElement('option');
@@ -111,7 +101,7 @@ function showBis() {
 
   if (!selectedClass || !selectedSpec) {
     resultDiv.innerHTML = '<p class="no-data">Выберите класс и специализацию</p>';
-    return;
+    return; // ✅ OK
   }
 
   const items = bisData.filter(
@@ -129,7 +119,7 @@ function showLoot() {
 
   if (!boss) {
     resultDiv.innerHTML = '<p class="no-data">Выберите босса</p>';
-    return;
+    return; // ✅ OK
   }
 
   const items = lootData[boss] || [];
@@ -140,10 +130,9 @@ function showLoot() {
 function renderItemList(items, container, title) {
   if (!items || items.length === 0) {
     container.innerHTML = '<p class="no-data">Нет предметов</p>';
-    return;
+    return; // ✅ OK
   }
 
-  // Убираем дубли по ID
   const seen = new Set();
   const uniqueItems = [];
   items.forEach(item => {
@@ -167,7 +156,6 @@ function renderItemList(items, container, title) {
   `;
 
   uniqueItems.forEach(item => {
-    // Находим все спеки, для которых этот предмет — BiS
     const bisSpecs = bisData
       .filter(i => i.id === item.id)
       .map(i => `${i.class} — ${i.spec}`);
@@ -242,7 +230,7 @@ function getSpecIcon(spec) {
   const filename = iconMap[spec];
   if (!filename) return '<span class="bis-tag">?</span>';
 
-  const url = `https://raw.githubusercontent.com/ElemKai/wow-bis/refs/heads/main/icons/${filename}`;
+  const url = `https://raw.githubusercontent.com/ElemKai/wow-bis/main/icons/${filename}`;
   return `<img src="${url}" alt="${spec}" class="spec-icon">`;
 }
 
