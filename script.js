@@ -1,4 +1,4 @@
-// Глобальные данные
+// Глобальные переменные
 let bisData = [];
 let lootData = {};
 
@@ -6,29 +6,30 @@ let lootData = {};
 async function loadData() {
   try {
     const response = await fetch('data.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    if (!response.ok) {
+      throw new Error(`Не удалось загрузить data.json: ${response.status}`);
+    }
     const data = await response.json();
 
     window.bisData = data;
     window.lootData = {};
 
-    // Группируем по боссам (исправлена регулярка)
+    // Группируем по боссам
     data.forEach(item => {
       const source = item.source || '';
       const bossMatch = source.match(/The War Within\s*-\s*(.+)/);
-      const boss = bossMatch ? bossMatch[1].trim() : null;
+      const boss = bossMatch ? bossMatch[1].trim() : 'Unknown Boss';
 
-      if (boss) {
-        if (!lootData[boss]) {
-          lootData[boss] = [];
-        }
-        lootData[boss].push(item);
+      if (!lootData[boss]) {
+        lootData[boss] = [];
       }
+      lootData[boss].push(item);
     });
 
     // Заполняем классы
     const classSelect = document.getElementById('classSelect');
     const uniqueClasses = [...new Set(data.map(item => item.class))].sort();
+    
     uniqueClasses.forEach(cls => {
       const option = document.createElement('option');
       option.value = cls;
@@ -36,7 +37,7 @@ async function loadData() {
       classSelect.appendChild(option);
     });
 
-    // Заполняем боссов в селекте
+    // Заполняем боссов
     const bossSelect = document.getElementById('bossSelect');
     const bosses = Object.keys(lootData).sort();
     bosses.forEach(boss => {
@@ -46,12 +47,17 @@ async function loadData() {
       bossSelect.appendChild(option);
     });
 
+    console.log('✅ Данные загружены:', bisData.length, 'предметов');
   } catch (err) {
-    console.error('❌ Ошибка загрузки данных:', err);
+    console.error('❌ Ошибка:', err);
     document.getElementById('result').innerHTML = `
       <p class="no-data">
-        Ошибка: ${err.message}<br>
-        Проверь <code>data.json</code> и формат <code>source</code>.
+        <strong>Ошибка загрузки данных:</strong><br>
+        ${err.message}<br><br>
+        Проверь:<br>
+        • Существует ли <code>data.json</code><br>
+        • Валидный ли JSON (нет запятых после последнего элемента)<br>
+        • Запущен ли через сервер (не file://)
       </p>
     `;
   }
@@ -75,11 +81,16 @@ function filterSpecs() {
 
   if (!selectedClass) return;
 
+  // Нормализуем сравнение (на всякий случай)
   const specs = [...new Set(
     bisData
       .filter(item => item.class === selectedClass)
       .map(item => item.spec)
   )].sort();
+
+  if (specs.length === 0) {
+    console.warn(`⚠️ Для класса "${selectedClass}" не найдено ни одной специализации`);
+  }
 
   specs.forEach(spec => {
     const option = document.createElement('option');
@@ -128,10 +139,11 @@ function showLoot() {
 // Отрисовка списка
 function renderItemList(items, container, title) {
   if (!items || items.length === 0) {
-    container.innerHTML = '<p class="no-data">Нет данных</p>';
+    container.innerHTML = '<p class="no-data">Нет предметов</p>';
     return;
   }
 
+  // Убираем дубли по ID
   const seen = new Set();
   const uniqueItems = [];
   items.forEach(item => {
@@ -155,6 +167,7 @@ function renderItemList(items, container, title) {
   `;
 
   uniqueItems.forEach(item => {
+    // Находим все спеки, для которых этот предмет — BiS
     const bisSpecs = bisData
       .filter(i => i.id === item.id)
       .map(i => `${i.class} — ${i.spec}`);
@@ -182,7 +195,7 @@ function renderItemList(items, container, title) {
   container.innerHTML = html;
 }
 
-// Иконки спеков (исправленный URL)
+// Иконки спеков
 function getSpecIcon(spec) {
   const iconMap = {
     'Warrior — Arms': 'Warrior-Arms.png',
@@ -225,7 +238,6 @@ function getSpecIcon(spec) {
     'Shaman — Enhancement': 'Shaman-Enhancement.png',
     'Shaman — Restoration': 'Shaman-Restoration.png'
   };
-  };
 
   const filename = iconMap[spec];
   if (!filename) return '<span class="bis-tag">?</span>';
@@ -234,5 +246,5 @@ function getSpecIcon(spec) {
   return `<img src="${url}" alt="${spec}" class="spec-icon">`;
 }
 
-// Запуск
+// Запуск после загрузки DOM
 document.addEventListener('DOMContentLoaded', loadData);
