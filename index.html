@@ -11,16 +11,31 @@
 <body>
   <div class="container">
     <header>
-      <h1>🔥РЛ-ПОМОШНИК ДЛЯ World Of Warcraft TWW S3</h1>
-      <p>Актуально на патч 11.2.0 | <a href="https://www.wowhead.com/" target="_blank">Данные с Wowhead</a></p>
+      <h1>🔥 РЛ-ПОМОШНИК ДЛЯ World Of Warcraft TWW S3</h1>
+      <p>Актуально на патч 11.2.0 | <a href="https://www.wowhead.com" target="_blank">Данные с Wowhead</a></p>
     </header>
 
-    <div class="controls">
+    <!-- Два режима: по спеку или по боссу -->
+    <div class="mode-selector">
+      <label><input type="radio" name="viewMode" value="spec" checked onchange="switchView()"> По классу/спеку</label>
+      <label><input type="radio" name="viewMode" value="boss" onchange="switchView()"> По боссу</label>
+    </div>
+
+    <!-- Фильтры -->
+    <div class="controls" id="specControls">
       <select id="classSelect" onchange="filterSpecs()">
         <option value="">Выберите класс</option>
       </select>
       <select id="specSelect" onchange="showBis()">
         <option value="">Выберите спек</option>
+      </select>
+    </div>
+
+    <div class="controls" id="bossControls" style="display:none;">
+      <select id="bossSelect" onchange="showLoot()">
+        <option value="">Выберите босса</option>
+        <option value="Manaforge Omega">Manaforge Omega</option>
+        <!-- Можно добавить других боссов -->
       </select>
     </div>
 
