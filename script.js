@@ -6,16 +6,16 @@ let lootData = {};
 async function loadData() {
   try {
     const response = await fetch('data.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
     window.bisData = data;
-
-    // Группируем данные по боссам
     window.lootData = {};
 
+    // Группируем по боссам (исправлена регулярка)
     data.forEach(item => {
       const source = item.source || '';
-      const bossMatch = source.match(/The War Within[^:]*: ([^,)]+)/);
+      const bossMatch = source.match(/The War Within\s*-\s*(.+)/);
       const boss = bossMatch ? bossMatch[1].trim() : null;
 
       if (boss) {
@@ -28,15 +28,32 @@ async function loadData() {
 
     // Заполняем классы
     const classSelect = document.getElementById('classSelect');
-    const uniqueClasses = [...new Set(data.map(item => item.class))];
+    const uniqueClasses = [...new Set(data.map(item => item.class))].sort();
     uniqueClasses.forEach(cls => {
       const option = document.createElement('option');
       option.value = cls;
       option.textContent = cls;
       classSelect.appendChild(option);
     });
+
+    // Заполняем боссов в селекте
+    const bossSelect = document.getElementById('bossSelect');
+    const bosses = Object.keys(lootData).sort();
+    bosses.forEach(boss => {
+      const option = document.createElement('option');
+      option.value = boss;
+      option.textContent = boss;
+      bossSelect.appendChild(option);
+    });
+
   } catch (err) {
-    console.error('Ошибка загрузки данных:', err);
+    console.error('❌ Ошибка загрузки данных:', err);
+    document.getElementById('result').innerHTML = `
+      <p class="no-data">
+        Ошибка: ${err.message}<br>
+        Проверь <code>data.json</code> и формат <code>source</code>.
+      </p>
+    `;
   }
 }
 
@@ -62,7 +79,7 @@ function filterSpecs() {
     bisData
       .filter(item => item.class === selectedClass)
       .map(item => item.spec)
-  )];
+  )].sort();
 
   specs.forEach(spec => {
     const option = document.createElement('option');
@@ -90,7 +107,7 @@ function showBis() {
     item => item.class === selectedClass && item.spec === selectedSpec
   );
 
-  renderItemList(items, resultDiv, `BiS для ${selectedClass} — ${selectedSpec}`);
+  renderItemList(items, resultDiv, `BiS: ${selectedClass} — ${selectedSpec}`);
 }
 
 // Показываем добычу с босса
@@ -105,26 +122,24 @@ function showLoot() {
   }
 
   const items = lootData[boss] || [];
-  renderItemList(items, resultDiv, `Добыча с босса: ${boss}`);
+  renderItemList(items, resultDiv, `Добыча: ${boss}`);
 }
 
-// Отрисовка списка с иконками BiS-спеков
+// Отрисовка списка
 function renderItemList(items, container, title) {
   if (!items || items.length === 0) {
     container.innerHTML = '<p class="no-data">Нет данных</p>';
     return;
   }
 
-  // Группируем предметы (чтобы не дублировать)
-  const uniqueItems = {};
+  const seen = new Set();
+  const uniqueItems = [];
   items.forEach(item => {
-    if (!uniqueItems[item.id]) {
-      uniqueItems[item.id] = { ...item, specs: [] };
+    if (!seen.has(item.id)) {
+      seen.add(item.id);
+      uniqueItems.push(item);
     }
-    uniqueItems[item.id].specs.push(`${item.class} — ${item.spec}`);
   });
-
-  const itemList = Object.values(uniqueItems);
 
   let html = `<h2>${title}</h2>`;
   html += `
@@ -139,16 +154,21 @@ function renderItemList(items, container, title) {
       <tbody>
   `;
 
-  itemList.forEach(item => {
-    const isBis = item.specs.length > 0;
-    const bisIcons = isBis
-      ? item.specs.map(spec => `<span class="bis-tag" title="${spec}">${getSpecIcon(spec)}</span>`).join('')
-      : '';
+  uniqueItems.forEach(item => {
+    const bisSpecs = bisData
+      .filter(i => i.id === item.id)
+      .map(i => `${i.class} — ${i.spec}`);
+
+    const bisIcons = bisSpecs.length > 0
+      ? bisSpecs.map(spec => `<span class="bis-tag" title="${spec}">${getSpecIcon(spec)}</span>`).join('')
+      : '—';
 
     html += `
       <tr>
         <td>
-          <a href="https://www.wowhead.com/item=${item.id}" class="item-link" data-wowhead="item=${item.id}">
+          <a href="https://www.wowhead.com/item=${item.id}" 
+             class="item-link" 
+             data-wowhead="item=${item.id}">
             ${item.name}
           </a>
         </td>
@@ -162,58 +182,57 @@ function renderItemList(items, container, title) {
   container.innerHTML = html;
 }
 
-// Возвращает URL иконки по классу и спеку
+// Иконки спеков (исправленный URL)
 function getSpecIcon(spec) {
   const iconMap = {
-    'Warrior — Arms': 'Warrior-Arms.svg',
-    'Warrior — Fury': 'Warrior-Fury.svg',
-    'Warrior — Protection': 'Warrior-Protection.svg',
-    'Druid — Balance': 'Druid-Balance.svg',
-    'Druid — Feral': 'Druid-Feral.svg',
-    'Druid — Guardian': 'Druid-Guardian.svg',
-    'Druid — Restoration': 'Druid-Restoration.svg',
-    'Priest — Discipline': 'Priest-Discipline.svg',
-    'Priest — Holy': 'Priest-Holy.svg',
-    'Priest — Shadow': 'Priest-Shadow.svg',
-    'Mage — Arcane': 'Mage-Arcane.svg',
-    'Mage — Fire': 'Mage-Fire.svg',
-    'Mage — Frost': 'Mage-Frost.svg',
-    'Monk — Brewmaster': 'Monk-Brewmaster.svg',
-    'Monk — Mistweaver': 'Monk-Mistweaver.svg',
-    'Monk — Windwalker': 'Monk-Windwalker.svg',
-    'Hunter — Beast Mastery': 'Hunter-BeastMastery.svg',
-    'Hunter — Marksmanship': 'Hunter-Marksmanship.svg',
-    'Hunter — Survival': 'Hunter-Survival.svg',
-    'Demon Hunter — Havoc': 'DemonHunter-Havoc.svg',
-    'Demon Hunter — Vengeance': 'DemonHunter-Vengeance.svg',
-    'Paladin — Holy': 'Paladin-Holy.svg',
-    'Paladin — Protection': 'Paladin-Protection.svg',
-    'Paladin — Retribution': 'Paladin-Retribution.svg',
-    'Evoker — Devastation': 'Evoker-Devastation.svg',
-    'Evoker — Preservation': 'Evoker-Preservation.svg',
-    'Evoker — Augmentation': 'Evoker-Augmentation.svg',
-    'Rogue — Assassination': 'Rogue-Assassination.svg',
-    'Rogue — Outlaw': 'Rogue-Outlaw.svg',
-    'Rogue — Subtlety': 'Rogue-Subtlety.svg',
-    'Death Knight — Blood': 'DeathKnight-Blood.svg',
-    'Death Knight — Frost': 'DeathKnight-Frost.svg',
-    'Death Knight — Unholy': 'DeathKnight-Unholy.svg',
-    'Warlock — Affliction': 'Warlock-Affliction.svg',
-    'Warlock — Demonology': 'Warlock-Demonology.svg',
-    'Warlock — Destruction': 'Warlock-Destruction.svg',
-    'Shaman — Elemental': 'Shaman-Elemental.svg',
-    'Shaman — Enhancement': 'Shaman-Enhancement.svg',
-    'Shaman — Restoration': 'Shaman-Restoration.svg'
+    'Warrior — Arms': 'Warrior-Arms.png',
+    'Warrior — Fury': 'Warrior-Fury.png',
+    'Warrior — Protection': 'Warrior-Protection.png',
+    'Druid — Balance': 'Druid-Balance.png',
+    'Druid — Feral': 'Druid-Feral.png',
+    'Druid — Guardian': 'Druid-Guardian.png',
+    'Druid — Restoration': 'Druid-Restoration.png',
+    'Priest — Discipline': 'Priest-Discipline.png',
+    'Priest — Holy': 'Priest-Holy.png',
+    'Priest — Shadow': 'Priest-Shadow.png',
+    'Mage — Arcane': 'Mage-Arcane.png',
+    'Mage — Fire': 'Mage-Fire.png',
+    'Mage — Frost': 'Mage-Frost.png',
+    'Monk — Brewmaster': 'Monk-Brewmaster.png',
+    'Monk — Mistweaver': 'Monk-Mistweaver.png',
+    'Monk — Windwalker': 'Monk-Windwalker.png',
+    'Hunter — Beast Mastery': 'Hunter-BeastMastery.png',
+    'Hunter — Marksmanship': 'Hunter-Marksmanship.png',
+    'Hunter — Survival': 'Hunter-Survival.png',
+    'Demon Hunter — Havoc': 'DemonHunter-Havoc.png',
+    'Demon Hunter — Vengeance': 'DemonHunter-Vengeance.png',
+    'Paladin — Holy': 'Paladin-Holy.png',
+    'Paladin — Protection': 'Paladin-Protection.png',
+    'Paladin — Retribution': 'Paladin-Retribution.png',
+    'Evoker — Devastation': 'Evoker-Devastation.png',
+    'Evoker — Preservation': 'Evoker-Preservation.png',
+    'Evoker — Augmentation': 'Evoker-Augmentation.png',
+    'Rogue — Assassination': 'Rogue-Assassination.png',
+    'Rogue — Outlaw': 'Rogue-Outlaw.png',
+    'Rogue — Subtlety': 'Rogue-Subtlety.png',
+    'Death Knight — Blood': 'DeathKnight-Blood.png',
+    'Death Knight — Frost': 'DeathKnight-Frost.png',
+    'Death Knight — Unholy': 'DeathKnight-Unholy.png',
+    'Warlock — Affliction': 'Warlock-Affliction.png',
+    'Warlock — Demonology': 'Warlock-Demonology.png',
+    'Warlock — Destruction': 'Warlock-Destruction.png',
+    'Shaman — Elemental': 'Shaman-Elemental.png',
+    'Shaman — Enhancement': 'Shaman-Enhancement.png',
+    'Shaman — Restoration': 'Shaman-Restoration.png'
+  };
   };
 
   const filename = iconMap[spec];
   if (!filename) return '<span class="bis-tag">?</span>';
 
-  // Используем прямую ссылку на GitHub (через raw.githubusercontent.com)
-  const url = `https://raw.githubusercontent.com/ElemKai/wow-bis/main/icons/${filename}`;
-
+  const url = `https://raw.githubusercontent.com/ElemKai/wow-bis/refs/heads/main/icons/${filename}`;
   return `<img src="${url}" alt="${spec}" class="spec-icon">`;
 }
 
-// Загружаем данные при старте
-window.onload = loadData;
+// Запуск
+document.addEventListener('DOMContentLoaded', loadData);
