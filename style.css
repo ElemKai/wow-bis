@@ -111,4 +111,29 @@ select {
     padding: 8px 6px;
     font-size: 0.9em;
   }
+  .bis-tag {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px;
+  border-radius: 50%;
+  background: #333;
+  border: 1px solid #555;
+}
+
+.mode-selector {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mode-selector label {
+  font-weight: bold;
+  color: #ccc;
+}
 }
