@@ -136,4 +136,19 @@ select {
   font-weight: bold;
   color: #ccc;
 }
+  .spec-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border: 1px solid #444;
+  background: #111;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.spec-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 200, 0, 0.6);
+}
 }
