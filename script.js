@@ -162,50 +162,57 @@ function renderItemList(items, container, title) {
   container.innerHTML = html;
 }
 
-// Возвращаем иконку по спеку (можно заменить на изображения)
+// Возвращает URL иконки по классу и спеку
 function getSpecIcon(spec) {
-  const icons = {
-    'Warrior — Arms': '⚔️',
-    'Warrior — Fury': '🪓',
-    'Warrior — Protection': '🛡️',
-    'Druid — Balance': '🌙',
-    'Druid — Feral': '🐅',
-    'Druid — Guardian': '🐻',
-    'Druid — Restoration': '🍃',
-    'Priest — Discipline': '✨',
-    'Priest — Holy': '✝️',
-    'Priest — Shadow': '🌑',
-    'Mage — Arcane': '🌀',
-    'Mage — Fire': '🔥',
-    'Mage — Frost': '❄️',
-    'Monk — Brewmaster': '🍶',
-    'Monk — Mistweaver': '💧',
-    'Monk — Windwalker': '🌪️',
-    'Hunter — Beast Mastery': '🏹',
-    'Hunter — Marksmanship': '🎯',
-    'Hunter — Survival': '🔪',
-    'Demon Hunter — Havoc': '🪓',
-    'Demon Hunter — Vengeance': '🔥',
-    'Paladin — Holy': '⚔️',
-    'Paladin — Protection': '🛡️',
-    'Paladin — Retribution': '⚖️',
-    'Evoker — Devastation': '🐉',
-    'Evoker — Preservation': '💚',
-    'Evoker — Augmentation': '⚡',
-    'Rogue — Assassination': '🗡️',
-    'Rogue — Outlaw': '🤠',
-    'Rogue — Subtlety': '👤',
-    'Death Knight — Blood': '🩸',
-    'Death Knight — Frost': '🧊',
-    'Death Knight — Unholy': '💀',
-    'Warlock — Affliction': '🕷️',
-    'Warlock — Demonology': '👺',
-    'Warlock — Destruction': '🧨',
-    'Shaman — Elemental': '⚡',
-    'Shaman — Enhancement': '⚔️',
-    'Shaman — Restoration': '🌊'
+  const iconMap = {
+    'Warrior — Arms': 'Warrior-Arms.svg',
+    'Warrior — Fury': 'Warrior-Fury.svg',
+    'Warrior — Protection': 'Warrior-Protection.svg',
+    'Druid — Balance': 'Druid-Balance.svg',
+    'Druid — Feral': 'Druid-Feral.svg',
+    'Druid — Guardian': 'Druid-Guardian.svg',
+    'Druid — Restoration': 'Druid-Restoration.svg',
+    'Priest — Discipline': 'Priest-Discipline.svg',
+    'Priest — Holy': 'Priest-Holy.svg',
+    'Priest — Shadow': 'Priest-Shadow.svg',
+    'Mage — Arcane': 'Mage-Arcane.svg',
+    'Mage — Fire': 'Mage-Fire.svg',
+    'Mage — Frost': 'Mage-Frost.svg',
+    'Monk — Brewmaster': 'Monk-Brewmaster.svg',
+    'Monk — Mistweaver': 'Monk-Mistweaver.svg',
+    'Monk — Windwalker': 'Monk-Windwalker.svg',
+    'Hunter — Beast Mastery': 'Hunter-BeastMastery.svg',
+    'Hunter — Marksmanship': 'Hunter-Marksmanship.svg',
+    'Hunter — Survival': 'Hunter-Survival.svg',
+    'Demon Hunter — Havoc': 'DemonHunter-Havoc.svg',
+    'Demon Hunter — Vengeance': 'DemonHunter-Vengeance.svg',
+    'Paladin — Holy': 'Paladin-Holy.svg',
+    'Paladin — Protection': 'Paladin-Protection.svg',
+    'Paladin — Retribution': 'Paladin-Retribution.svg',
+    'Evoker — Devastation': 'Evoker-Devastation.svg',
+    'Evoker — Preservation': 'Evoker-Preservation.svg',
+    'Evoker — Augmentation': 'Evoker-Augmentation.svg',
+    'Rogue — Assassination': 'Rogue-Assassination.svg',
+    'Rogue — Outlaw': 'Rogue-Outlaw.svg',
+    'Rogue — Subtlety': 'Rogue-Subtlety.svg',
+    'Death Knight — Blood': 'DeathKnight-Blood.svg',
+    'Death Knight — Frost': 'DeathKnight-Frost.svg',
+    'Death Knight — Unholy': 'DeathKnight-Unholy.svg',
+    'Warlock — Affliction': 'Warlock-Affliction.svg',
+    'Warlock — Demonology': 'Warlock-Demonology.svg',
+    'Warlock — Destruction': 'Warlock-Destruction.svg',
+    'Shaman — Elemental': 'Shaman-Elemental.svg',
+    'Shaman — Enhancement': 'Shaman-Enhancement.svg',
+    'Shaman — Restoration': 'Shaman-Restoration.svg'
   };
-  return icons[spec] || '❓';
+
+  const filename = iconMap[spec];
+  if (!filename) return '<span class="bis-tag">?</span>';
+
+  // Используем прямую ссылку на GitHub (через raw.githubusercontent.com)
+  const url = `https://raw.githubusercontent.com/ElemKai/wow-bis/main/icons/${filename}`;
+
+  return `<img src="${url}" alt="${spec}" class="spec-icon">`;
 }
 
 // Загружаем данные при старте
