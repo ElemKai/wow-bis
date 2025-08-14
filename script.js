@@ -29,7 +29,6 @@ function populateSourceFilter() {
     option.textContent = src;
     sourceSelect.appendChild(option);
   });
-}
 
 // В режиме "по источнику"
 function showBySource() {
