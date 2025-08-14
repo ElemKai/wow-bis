@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WoW BiS List</title>
+  <title>🔥 WoW TWW S3 BiS Гид</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Wowhead Power -->
   <script src="https://wow.zamimg.com/widgets/power.js"></script>
@@ -11,21 +11,18 @@
 <body>
   <div class="container">
     <header>
-      <h1>🔥 РЛ-ПОМОШНИК ДЛЯ World Of Warcraft TWW S3</h1>
+      <h1>🔥 РЛ-ПОМОШНИК ДЛЯ World of Warcraft TWW S3</h1>
       <p>Актуально на патч 11.2.0 | <a href="https://www.wowhead.com" target="_blank">Данные с Wowhead</a></p>
     </header>
 
-    <!-- Два режима: по спеку или по боссу -->
+    <!-- Режимы отображения -->
     <div class="mode-selector">
       <label><input type="radio" name="viewMode" value="spec" checked onchange="switchView()"> По классу/спеку</label>
       <label><input type="radio" name="viewMode" value="boss" onchange="switchView()"> По боссу</label>
+      <label><input type="radio" name="viewMode" value="source" onchange="switchView()"> По источнику</label>
     </div>
 
     <!-- Фильтры -->
-    <div class="controls" id="sourceControls" style="display:none;">
-     <select id="sourceSelect" onchange="showBySource()">
-        <option value="">Выберите источник</option>
-      </select>
     <div class="controls" id="specControls">
       <select id="classSelect" onchange="filterSpecs()">
         <option value="">Выберите класс</option>
@@ -38,8 +35,12 @@
     <div class="controls" id="bossControls" style="display:none;">
       <select id="bossSelect" onchange="showLoot()">
         <option value="">Выберите босса</option>
-        <option value="Manaforge Omega">Manaforge Omega</option>
-        <!-- Можно добавить других боссов -->
+      </select>
+    </div>
+
+    <div class="controls" id="sourceControls" style="display:none;">
+      <select id="sourceSelect" onchange="showBySource()">
+        <option value="">Выберите источник</option>
       </select>
     </div>
 
