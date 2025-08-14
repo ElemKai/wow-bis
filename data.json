@@ -1,792 +1,830 @@
 [
   {
     "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Chest",
-    "name": "Выкованный из маны каркас смещения",
-    "id": 225107,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Chest",
-    "name": "Выкованный из маны каркас смещения",
-    "id": 225107,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Blood",
-    "slot": "Chest",
-    "name": "Выкованный из маны каркас смещения",
-    "id": 225107,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Feet",
-    "name": "Стерилизующие сапоги",
-    "id": 225124,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Mage",
-    "spec": "Fire",
-    "slot": "Shoulders",
-    "name": "Наплечные манапушки",
-    "id": 225060,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "slot": "Wrists",
-    "name": "Опаленные просеиватели",
-    "id": 225110,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Unholy",
-    "slot": "Helm",
-    "name": "Облученный фильтр загрязнений",
-    "id": 225001,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Survival",
-    "slot": "Waist",
-    "name": "Атомный фазовый пояс",
-    "id": 225116,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Druid",
-    "spec": "Guardian",
-    "slot": "Legs",
-    "name": "Юбка-плед из камеры просеивания",
-    "id": 225119,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Enhancement",
-    "slot": "Wrists",
-    "name": "Чаротехническая наручная матрица",
-    "id": 225111,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "slot": "Ring",
-    "name": "Логическая схема \"Альфа\"",
-    "id": 224920,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Warrior",
-    "spec": "Arms",
-    "slot": "Main Hand",
-    "name": "Заводской плетеномолот",
-    "id": 225002,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Mage",
-    "spec": "Arcane",
-    "slot": "Main Hand",
-    "name": "Разогнанный плетеномолот",
-    "id": 225003,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Subtlety",
-    "slot": "Two-Hand",
-    "name": "Лучевая глефа уничтожения",
-    "id": 225004,
-    "ilvl": 714,
-    "source": "The War Within - Plexus Sentinel"
-  },
-
-  {
-    "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Legs",
-    "name": "Наивысшее шелковое подношение",
-    "id": 225130,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Monk",
-    "spec": "Windwalker",
-    "slot": "Legs",
-    "name": "Наивысшее шелковое подношение",
-    "id": 225130,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "slot": "Legs",
-    "name": "Наивысшее шелковое подношение",
-    "id": 225130,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "slot": "Legs",
-    "name": "Наивысшее шелковое подношение",
-    "id": 225130,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Blood",
-    "slot": "Feet",
-    "name": "Шнурованные логовоходы",
-    "id": 225122,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Shoulders",
-    "name": "Наплечные пластины смертельных уз",
-    "id": 225104,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Beast Mastery",
-    "slot": "Waist",
-    "name": "Колоссальные узы жизни",
-    "id": 225117,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Elemental",
-    "slot": "Wrists",
-    "name": "Сброшенные питательные оковы",
-    "id": 225112,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Assassination",
-    "slot": "One-Hand",
-    "name": "Изумительный резчик генов",
-    "id": 225005,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Marksmanship",
-    "slot": "Ranged",
-    "name": "Пронзающий нитяной лук",
-    "id": 225055,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Demon Hunter",
-    "spec": "Havoc",
-    "slot": "Trinket 1",
-    "name": "Астральный усик",
-    "id": 224950,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Warlock",
-    "spec": "Destruction",
-    "slot": "Trinket 2",
-    "name": "Живой шелк Ткан'итара",
-    "id": 224951,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Holy",
-    "slot": "Off Hand",
-    "name": "Оберег плетущего зверя",
-    "id": 225051,
-    "ilvl": 714,
-    "source": "The War Within - Loom'ithar"
-  },
-
-  {
-    "class": "Warrior",
-    "spec": "Fury",
-    "slot": "Hands",
-    "name": "Наивысшее вяжущее вещество",
-    "id": 225131,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Preservation",
-    "slot": "Hands",
-    "name": "Наивысшее вяжущее вещество",
-    "id": 225131,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Mage",
-    "spec": "Frost",
-    "slot": "Chest",
-    "name": "Одежды единения духа",
-    "id": 225108,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Subtlety",
-    "slot": "Wrists",
-    "name": "Наручники забытой сущности",
-    "id": 225111,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Enhancement",
-    "slot": "Feet",
-    "name": "Когти смертоносного прядильщика",
-    "id": 225123,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Retribution",
-    "slot": "Waist",
-    "name": "Путы юного эфириала",
-    "id": 225118,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Priest",
-    "spec": "Shadow",
-    "slot": "Neck",
-    "name": "Хризалида разлученных душ",
-    "id": 224880,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Unholy",
-    "slot": "Trinket 1",
-    "name": "Мистический кнут Наазиндри",
-    "id": 224952,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Survival",
-    "slot": "Trinket 2",
-    "name": "Объятия стражницы душ",
-    "id": 224953,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Monk",
-    "spec": "Windwalker",
-    "slot": "One-Hand",
-    "name": "Тренировочные кулаки неприкаянных",
-    "id": 225006,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-  {
-    "class": "Warlock",
-    "spec": "Demonology",
-    "slot": "Two-Hand",
-    "name": "Шпиль из стекла Бездны",
-    "id": 225007,
-    "ilvl": 714,
-    "source": "The War Within - Soulbinder Naazindhri"
-  },
-
-  {
-    "class": "Warrior",
     "spec": "Arms",
     "slot": "Helm",
-    "name": "Наивысшая зловещая колба",
+    "name": "Защитная маска живого оружия",
     "id": 225101,
     "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
+    "source": "Forgeweaver Araz"
   },
-  {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "slot": "Helm",
-    "name": "Наивысшая зловещая колба",
-    "id": 225101,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Mage",
-    "spec": "Arcane",
-    "slot": "Waist",
-    "name": "Книжный чехол ткача горна",
-    "id": 225116,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Druid",
-    "spec": "Feral",
-    "slot": "Feet",
-    "name": "Лабораторные тестовые туфли",
-    "id": 225122,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Marksmanship",
-    "slot": "Chest",
-    "name": "Форма поглощенного служителя",
-    "id": 225107,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Hands",
-    "name": "Ловцы сбежавших экспериментов",
-    "id": 225113,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "slot": "Ring",
-    "name": "Логическая схема \"Омега\"",
-    "id": 224921,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Elemental",
-    "slot": "Trinket 1",
-    "name": "Ритуальный горн Араза",
-    "id": 224954,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Augmentation",
-    "slot": "Two-Hand",
-    "name": "Чудо техномантии",
-    "id": 225008,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Warrior",
-    "spec": "Fury",
-    "slot": "Two-Hand",
-    "name": "Фотонная элитная сабля",
-    "id": 225009,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-  {
-    "class": "Priest",
-    "spec": "Holy",
-    "slot": "Off Hand",
-    "name": "Радуга запредельной тьмы",
-    "id": 225052,
-    "ilvl": 714,
-    "source": "The War Within - Forgeweaver Araz"
-  },
-
-  {
-    "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Helm",
-    "name": "Наивысший проклятый знак тоски",
-    "id": 225102,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "slot": "Helm",
-    "name": "Наивысший проклятый знак тоски",
-    "id": 225102,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Blood",
-    "slot": "Hands",
-    "name": "Узы окутывающей ненависти",
-    "id": 225114,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Priest",
-    "spec": "Shadow",
-    "slot": "Neck",
-    "name": "Отчаяние Вспышки Сумерек",
-    "id": 224881,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Trinket 1",
-    "name": "Печать неизбывной ярости",
-    "id": 224955,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Subtlety",
-    "slot": "Trinket 2",
-    "name": "Печать космической охоты",
-    "id": 224956,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Demon Hunter",
-    "spec": "Havoc",
-    "slot": "One-Hand",
-    "name": "Коллапсирующие фазовые клинки",
-    "id": 225010,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Off Hand",
-    "name": "Горизонт событий",
-    "id": 225053,
-    "ilvl": 714,
-    "source": "The War Within - The Soul Hunters"
-  },
-
   {
     "class": "Warrior",
     "spec": "Arms",
-    "slot": "Helm",
-    "name": "Наивысший загрязнитель из стекла Бездны",
-    "id": 225103,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Enhancement",
-    "slot": "Wrists",
-    "name": "Наручи из срощенного стекла",
-    "id": 225111,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Marksmanship",
-    "slot": "Helm",
-    "name": "Клыки астральных пустошей",
-    "id": 225104,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Warrior",
-    "spec": "Fury",
-    "slot": "Legs",
-    "name": "Шрапнельные бриджи",
-    "id": 225119,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "slot": "Trinket 1",
-    "name": "Алмазный сердечник Бездны",
-    "id": 224957,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Retribution",
-    "slot": "Trinket 2",
-    "name": "Незыблемая призма Пустоты",
-    "id": 224958,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Mage",
-    "spec": "Arcane",
-    "slot": "One-Hand",
-    "name": "Крис из стекла бездны",
-    "id": 225011,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Beast Mastery",
-    "slot": "Ranged",
-    "name": "Израненный заклинатель потока",
-    "id": 225056,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-  {
-    "class": "Warlock",
-    "spec": "Destruction",
-    "slot": "Off Hand",
-    "name": "Последний вздох Разломия",
-    "id": 225054,
-    "ilvl": 714,
-    "source": "The War Within - Fractillus"
-  },
-
-  {
-    "class": "Warrior",
-    "spec": "Protection",
-    "slot": "Shoulders",
-    "name": "Маячок ложной праведности",
-    "id": 225105,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Holy",
-    "slot": "Waist",
-    "name": "Жуткий пояс жнеца",
-    "id": 225117,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Hunter",
-    "spec": "Survival",
-    "slot": "Legs",
-    "name": "Элитные бриджи Темной Стражи",
-    "id": 225120,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Shaman",
-    "spec": "Elemental",
-    "slot": "Wrists",
-    "name": "Тяжелые наручи уговора",
-    "id": 225112,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Hands",
-    "name": "Королевские пусточешуйчатые рукавицы",
-    "id": 225113,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Death Knight",
-    "spec": "Unholy",
     "slot": "Neck",
     "name": "Ошибка Салхадаара",
     "id": 224882,
     "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Mage",
-    "spec": "Fire",
-    "slot": "Trinket 1",
-    "name": "Приказ Соправителя",
-    "id": 224959,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "slot": "Trinket 2",
-    "name": "Проектор вероломства",
-    "id": 224960,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
+    "source": "Nexus-King Salhadaar"
   },
   {
     "class": "Warrior",
     "spec": "Arms",
-    "slot": "One-Hand",
-    "name": "Расплата клятвопреступника",
-    "id": 225012,
+    "slot": "Shoulders",
+    "name": "Бастионы живого оружия",
+    "id": 225105,
     "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
+    "source": "The Soul Hunters"
   },
-  {
-    "class": "Mage",
-    "spec": "Arcane",
-    "slot": "One-Hand",
-    "name": "Клинок властителя из стекла Бездны",
-    "id": 225013,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Rogue",
-    "spec": "Subtlety",
-    "slot": "One-Hand",
-    "name": "Мстительный шип Пустоты",
-    "id": 225014,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-  {
-    "class": "Demon Hunter",
-    "spec": "Havoc",
-    "slot": "Two-Hand",
-    "name": "Чрево Пустоты",
-    "id": 225015,
-    "ilvl": 714,
-    "source": "The War Within - Nexus-King Salhadaar"
-  },
-
   {
     "class": "Warrior",
-    "spec": "Fury",
-    "slot": "Helm",
-    "name": "Непостижимый взор Атрошиона",
-    "id": 225106,
+    "spec": "Arms",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Patch 11.2 Questline"
   },
   {
-    "class": "Death Knight",
-    "spec": "Blood",
-    "slot": "Waist",
-    "name": "Сверхплотный атомный ремень",
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Chest",
+    "name": "Бастион живого оружия",
+    "id": 225107,
+    "ilvl": 714,
+    "source": "Fractillus"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Wrist",
+    "name": "Выкованные навеки тяжелые наручи",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Gloves",
+    "name": "Крушители живого оружия",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Soulbinder Naazindhri"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Belt",
+    "name": "Выкованный навеки большой пояс",
     "id": 225118,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Crafting"
   },
   {
-    "class": "Evoker",
-    "spec": "Augmentation",
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Legs",
+    "name": "Набедренники живого оружия",
+    "id": 225119,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Boots",
+    "name": "Латные башмаки захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Arms",
     "slot": "Ring",
     "name": "Перстень расколотой души",
     "id": 224961,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Dimensius"
   },
   {
-    "class": "Shaman",
-    "spec": "Enhancement",
-    "slot": "Shoulders",
-    "name": "Когти безуспешного сопротивления",
-    "id": 225107,
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Ring",
+    "name": "Печатка взрывающихся звезд",
+    "id": 224956,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Tazavesh: So'leah's Gambit"
   },
   {
-    "class": "Hunter",
-    "spec": "Survival",
-    "slot": "Feet",
-    "name": "Наголенники расколотого пространства",
-    "id": 225124,
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Trinket",
+    "name": "Астральный усик",
+    "id": 224950,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Loom'ithar"
   },
   {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "slot": "Trinket 1",
-    "name": "Всепоглощающее ядро",
-    "id": 224962,
-    "ilvl": 714,
-    "source": "The War Within - Dimensius"
-  },
-  {
-    "class": "Paladin",
-    "spec": "Protection",
-    "slot": "Trinket 2",
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Trinket",
     "name": "Крики забытых небес",
     "id": 224963,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Dimensius"
   },
   {
-    "class": "Monk",
-    "spec": "Windwalker",
-    "slot": "One-Hand",
-    "name": "Эргосферическая дубина",
-    "id": 225016,
+    "class": "Warrior",
+    "spec": "Arms",
+    "slot": "Main Hand",
+    "name": "Чрево Пустоты",
+    "id": 225015,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Nexus-King Salhadaar"
   },
   {
     "class": "Warrior",
     "spec": "Fury",
-    "slot": "Two-Hand",
-    "name": "Сверхмассивный звездобой",
-    "id": 225017,
+    "slot": "Helm",
+    "name": "Личина плавленой кости",
+    "id": 225106,
     "ilvl": 714,
-    "source": "The War Within - Dimensius"
+    "source": "Manaforge Omega"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Neck",
+    "name": "Хризалида разлученных душ",
+    "id": 224880,
+    "ilvl": 714,
+    "source": "Soulbinder Naazindhri"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Shoulders",
+    "name": "Бастионы живого оружия",
+    "id": 225105,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
+    "ilvl": 714,
+    "source": "Patch 11.2 Questline"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Chest",
+    "name": "Бастион живого оружия",
+    "id": 225107,
+    "ilvl": 714,
+    "source": "Fractillus"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Wrist",
+    "name": "Выкованные навеки тяжелые наручи",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Gloves",
+    "name": "Крушители живого оружия",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Soulbinder Naazindhri"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Belt",
+    "name": "Цепь живого оружия",
+    "id": 225117,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Legs",
+    "name": "Набедренники живого оружия",
+    "id": 225119,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Boots",
+    "name": "Латные башмаки захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Ring",
+    "name": "Сияющий перстень некроманта",
+    "id": 224957,
+    "ilvl": 714,
+    "source": "Priory of the Sacred Flame"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Ring",
+    "name": "Печатка лживого обвинения",
+    "id": 224958,
+    "ilvl": 714,
+    "source": "Halls of Atonement"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Trinket",
+    "name": "Астральный усик",
+    "id": 224950,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Trinket",
+    "name": "Крики забытых небес",
+    "id": 224963,
+    "ilvl": 714,
+    "source": "Dimensius"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Main Hand",
+    "name": "Автоматический выключатель",
+    "id": 225009,
+    "ilvl": 714,
+    "source": "Operation: Floodgate"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Fury",
+    "slot": "Off Hand",
+    "name": "Выкованный навеки большой топор",
+    "id": 225006,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Helm",
+    "name": "Защитная маска живого оружия",
+    "id": 225101,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Neck",
+    "name": "Кабошон рода Бесконечности",
+    "id": 224959,
+    "ilvl": 714,
+    "source": "Tazavesh: So'leah's Gambit"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Shoulders",
+    "name": "Бастионы живого оружия",
+    "id": 225105,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
+    "ilvl": 714,
+    "source": "Patch 11.2 Questline"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Chest",
+    "name": "Нагрудный доспех из пробного кровошелка",
+    "id": 225108,
+    "ilvl": 714,
+    "source": "Ara-Kara, City of Echoes"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Wrist",
+    "name": "Выкованные навеки тяжелые наручи",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Gloves",
+    "name": "Крушители живого оружия",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Belt",
+    "name": "Выкованный навеки большой пояс",
+    "id": 225118,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Legs",
+    "name": "Набедренники живого оружия",
+    "id": 225119,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Boots",
+    "name": "Латные башмаки захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Ring",
+    "name": "Перстень расколотой души",
+    "id": 224961,
+    "ilvl": 714,
+    "source": "Dimensius"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Ring",
+    "name": "Логическая схема \"Омега\"",
+    "id": 224921,
+    "ilvl": 714,
+    "source": "Forgeweaver Araz"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Main Hand",
+    "name": "Расплата клятвопреступника",
+    "id": 225012,
+    "ilvl": 714,
+    "source": "Nexus-King Salhadaar"
+  },
+  {
+    "class": "Warrior",
+    "spec": "Protection",
+    "slot": "Off Hand",
+    "name": "Оберег плетущего зверя",
+    "id": 225051,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Helm",
+    "name": "Небесное оперение орлиного матриарха",
+    "id": 225102,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Neck",
+    "name": "Запятнанная грехом подвеска",
+    "id": 224955,
+    "ilvl": 714,
+    "source": "Halls of Atonement"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Shoulders",
+    "name": "Ритуальные наплечники орлиного матриарха",
+    "id": 225104,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
+    "ilvl": 714,
+    "source": "Artifact Cloak"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Chest",
+    "name": "Жилет орлиного матриарха",
+    "id": 225107,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Wrist",
+    "name": "Поручи с руническим клеймом",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Gloves",
+    "name": "Крылья орлиного матриарха",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Belt",
+    "name": "Атомный фазовый пояс",
+    "id": 225116,
+    "ilvl": 714,
+    "source": "Plexus Sentinel"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Legs",
+    "name": "Оплеванные брюки",
+    "id": 225120,
+    "ilvl": 714,
+    "source": "Eco-Dome Al'dani"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Boots",
+    "name": "Укрепленные сандалии захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Ring",
+    "name": "Логическая схема \"Омега\"",
+    "id": 224921,
+    "ilvl": 714,
+    "source": "Forgeweaver Araz"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Ring",
+    "name": "Печатка лживого обвинения",
+    "id": 224958,
+    "ilvl": 714,
+    "source": "Halls of Atonement"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Trinket",
+    "name": "Ритуальный горн Араза",
+    "id": 224954,
+    "ilvl": 714,
+    "source": "Forgeweaver Araz"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Trinket",
+    "name": "Астральный усик",
+    "id": 224950,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Main Hand",
+    "name": "Крис из стекла бездны",
+    "id": 225011,
+    "ilvl": 714,
+    "source": "Fractillus"
+  },
+  {
+    "class": "Druid",
+    "spec": "Balance",
+    "slot": "Off Hand",
+    "name": "Факел бродяги",
+    "id": 225052,
+    "ilvl": 714,
+    "source": "Crafting"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Helm",
+    "name": "Небесное оперение орлиного матриарха",
+    "id": 225102,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Neck",
+    "name": "Ошибка Салхадаара",
+    "id": 224882,
+    "ilvl": 714,
+    "source": "Nexus-King Salhadaar"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Shoulders",
+    "name": "Ритуальные наплечники орлиного матриарха",
+    "id": 225104,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
+    "ilvl": 714,
+    "source": "Patch 11.2 Questline"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Chest",
+    "name": "Фрактальный жилет Со'азми",
+    "id": 225109,
+    "ilvl": 714,
+    "source": "Tazavesh: Streets of Wonder"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Wrist",
+    "name": "Поручи с руническим клеймом",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Leatherworking"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Gloves",
+    "name": "Крылья орлиного матриарха",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Belt",
+    "name": "Боевой пояс с руническим клеймом",
+    "id": 225118,
+    "ilvl": 714,
+    "source": "Leatherworking"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Legs",
+    "name": "Брюки орлиного матриарха",
+    "id": 225119,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Boots",
+    "name": "Укрепленные сандалии захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Ring",
+    "name": "Сияющий перстень некроманта",
+    "id": 224957,
+    "ilvl": 714,
+    "source": "Priory of the Sacred Flame"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Ring",
+    "name": "Кольцо паноплии",
+    "id": 224959,
+    "ilvl": 714,
+    "source": "Tazavesh: Streets of Wonder"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Trinket",
+    "name": "Ритуальный горн Араза",
+    "id": 224954,
+    "ilvl": 714,
+    "source": "Forgeweaver Araz"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Trinket",
+    "name": "Астральный усик",
+    "id": 224950,
+    "ilvl": 714,
+    "source": "Loom'ithar"
+  },
+  {
+    "class": "Druid",
+    "spec": "Feral",
+    "slot": "Main Hand",
+    "name": "Запрет Жницы",
+    "id": 225007,
+    "ilvl": 714,
+    "source": "Ara-Kara, City of Echoes"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Helm",
+    "name": "Безупречное средоточие чароплета",
+    "id": 225103,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Neck",
+    "name": "Отчаяние Вспышки Сумерек",
+    "id": 224881,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Shoulders",
+    "name": "Безупречные наплечники чароплета",
+    "id": 225104,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Cloak",
+    "name": "Повязки реши",
+    "id": 224870,
+    "ilvl": 714,
+    "source": "Patch 11.2 Questline"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Chest",
+    "name": "Безупречная защита чароплета",
+    "id": 225107,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Wrist",
+    "name": "Гравированные символами тяжелые наручи",
+    "id": 225111,
+    "ilvl": 714,
+    "source": "Leatherworking"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Gloves",
+    "name": "Безупречные чешуйчатые наручи чароплета",
+    "id": 225113,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Belt",
+    "name": "Долговечный Информационный Сверхбезопасный Контейнер",
+    "id": 225117,
+    "ilvl": 714,
+    "source": "Overcharged Delves"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Legs",
+    "name": "Безупречные рунные брюки чароплета",
+    "id": 225119,
+    "ilvl": 714,
+    "source": "Catalyst"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Boots",
+    "name": "Плетеные сапоги захватчика",
+    "id": 225124,
+    "ilvl": 714,
+    "source": "The Soul Hunters"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Ring",
+    "name": "Перстень расколотой души",
+    "id": 224961,
+    "ilvl": 714,
+    "source": "Dimensius"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Ring",
+    "name": "Кольцо паноплии",
+    "id": 224959,
+    "ilvl": 714,
+    "source": "Tazavesh: Streets of Wonder"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Trinket",
+    "name": "Ритуальный горн Араза",
+    "id": 224954,
+    "ilvl": 714,
+    "source": "Forgeweaver Araz"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Trinket",
+    "name": "Параподии Ажиккара",
+    "id": 224960,
+    "ilvl": 714,
+    "source": "Eco-Dome Al'dani"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Main Hand",
+    "name": "Клинок властителя из стекла Бездны",
+    "id": 225013,
+    "ilvl": 714,
+    "source": "Nexus-King Salhadaar"
+  },
+  {
+    "class": "Evoker",
+    "spec": "Devastation",
+    "slot": "Off Hand",
+    "name": "Факел бродяги",
+    "id": 225052,
+    "ilvl": 714,
+    "source": "Inscription"
   }
 ]
