@@ -14,6 +14,38 @@ async function loadData() {
     window.bisData = data;
     window.lootData = {};
 
+    // После загрузки данных — добавь уникальные источники
+function populateSourceFilter() {
+  const sourceSelect = document.getElementById('sourceSelect');
+  if (!sourceSelect) return;
+
+  const sources = [...new Set(
+    bisData.map(item => item.source.split(' - ')[1]?.trim() || item.source.trim())
+  )].sort();
+
+  sources.forEach(src => {
+    const option = document.createElement('option');
+    option.value = src;
+    option.textContent = src;
+    sourceSelect.appendChild(option);
+  });
+}
+
+// В режиме "по источнику"
+function showBySource() {
+  const sourceSelect = document.getElementById('sourceSelect');
+  const resultDiv = document.getElementById('result');
+  const source = sourceSelect.value;
+
+  if (!source) {
+    resultDiv.innerHTML = '<p class="no-data">Выберите источник</p>';
+    return;
+  }
+
+  const items = bisData.filter(item => item.source.includes(source));
+  renderItemList(items, resultDiv, `Добыча: ${source}`);
+}
+    
     // Группируем по боссам
     data.forEach(item => {
       const source = item.source || '';
