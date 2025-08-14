@@ -22,6 +22,10 @@
     </div>
 
     <!-- Фильтры -->
+    <div class="controls" id="sourceControls" style="display:none;">
+     <select id="sourceSelect" onchange="showBySource()">
+        <option value="">Выберите источник</option>
+      </select>
     <div class="controls" id="specControls">
       <select id="classSelect" onchange="filterSpecs()">
         <option value="">Выберите класс</option>
