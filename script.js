@@ -29,7 +29,7 @@ async function loadData() {
         lootData[boss].push(item);
       }
 
-      // Группируем по источникам (без префикса The War Within)
+      // Группируем по чистому источнику (без префикса)
       const cleanSource = source.replace(/The War Within\s*-\s*/, '').trim();
       if (!sourceData[cleanSource]) sourceData[cleanSource] = [];
       sourceData[cleanSource].push(item);
@@ -86,7 +86,7 @@ function switchView() {
   document.getElementById('result').innerHTML = '';
 }
 
-// Фильтрация спеков
+// Фильтрация специализаций
 function filterSpecs() {
   const classSelect = document.getElementById('classSelect');
   const specSelect = document.getElementById('specSelect');
@@ -161,14 +161,13 @@ function showBySource() {
   renderItemList(items, resultDiv, `Источник: ${source}`);
 }
 
-// Отрисовка списка
+// Отрисовка списка с иконками
 function renderItemList(items, container, title) {
   if (!items || items.length === 0) {
     container.innerHTML = '<p class="no-data">Нет предметов</p>';
     return;
   }
 
-  // Уникальные предметы по ID
   const seen = new Set();
   const uniqueItems = [];
   items.forEach(item => {
@@ -178,16 +177,15 @@ function renderItemList(items, container, title) {
     }
   });
 
-  // Группировка по слоту
+  let html = `<h2>${title}</h2>`;
+  html += `<div class="slot-group">`;
+
   const grouped = uniqueItems.reduce((acc, item) => {
     const slot = item.slot || 'Unknown';
     if (!acc[slot]) acc[slot] = [];
     acc[slot].push(item);
     return acc;
   }, {});
-
-  let html = `<h2>${title}</h2>`;
-  html += `<div class="slot-group">`;
 
   Object.keys(grouped).sort().forEach(slot => {
     const slotItems = grouped[slot];
@@ -244,7 +242,7 @@ function getSpecIcon(spec) {
     'Hunter — Beast Mastery': 'hunter_bm.png',
     'Hunter — Marksmanship': 'hunter_mm.png',
     'Hunter — Survival': 'hunter_survival.png',
-    'Demon Hunter — Havoc': 'Ddh_havoc.png',
+    'Demon Hunter — Havoc': 'dh_havoc.png',
     'Demon Hunter — Vengeance': 'dh_vengeance.png',
     'Paladin — Holy': 'paladin_holy.png',
     'Paladin — Protection': 'paladin_protection.png',
